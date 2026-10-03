@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Inventory Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Product Inventory Manager</h1>
+
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Product Name" required>
+      <input type="number" id="price" placeholder="Price" min="0" required>
+      <input type="number" id="quantity" placeholder="Quantity" min="0" required>
+      <button type="submit">Add Product</button>
+    </form>
+
+    <h2>Inventory</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="productList"></tbody>
+    </table>
+
+    <h3 id="totalValue">Total Inventory Value: ₹0</h3>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
